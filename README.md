@@ -61,3 +61,15 @@ The update strategy with the preference point can be turned on and off using the
 
 With the filter method, we aim to minimise the constraints violation and the loss function simultaneously. At each iteration, the filter-based \ac{Neural ODE} method generates two independent trial points. One computed by minimising the loss function and another minimising the constraints violation. The proposed filter-based \ac{Neural ODE} method prioritises feasible solutions, followed by infeasible and non-dominated ones.
 
+To run the **population growth** example, execute the following command, choosing a path to store the plot with the results and final trained model weights:
+
+```
+python filterMethod/logPopulation.py --savePlot "path/to/save/plot" --saveModel "path/to/save/model"
+```
+
+To run the **chemical reaction** example, execute the following command, choosing a path to store the plot with the results and final trained model weights:
+
+```
+python filterMethod/chemicalReaction.py --savePlot "path/to/save/plot" --saveModel "path/to/save/model"
+```
+
