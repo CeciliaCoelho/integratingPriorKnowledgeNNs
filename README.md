@@ -5,6 +5,69 @@ This repository is home to three different methods:
 2. **The Self-adaptive Penalty Method:** ["A Self-Adaptive Penalty Method for Integrating Prior Knowledge Constraints into Neural ODEs"; C. Coelho, M. Fernanda P. Costa, and L.L. Ferrás; preprint](https://arxiv.org/abs/2307.14940) 
 3. **The Filter Method:** ["A Filter-based Neural ODE Approach for Modelling Natural Systems with Prior Knowledge Constraints"; C. Coelho, M. Fernanda P. Costa, and L.L. Ferrás; Accepted to Knowledge-Guided Machine Learning Workshop at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases ECML PKDD 2023]()
 
+### **If you use this code, please cite the respective papers:**
+- For the Two-stage Method: 
+```
+@inproceedings{Y_coelho2023prior,
+  author       = {C. Coelho and
+                  M. Fernanda P. Costa and
+                  L.L. Ferr{\'{a}}s},
+  editor       = {Krystal Maughan and
+                  Rosanne Liu and
+                  Thomas F. Burns},
+  title        = {Prior knowledge meets Neural ODEs: a two-stage training method for
+                  improved explainability},
+  booktitle    = {The First Tiny Papers Track at {ICLR} 2023, Tiny Papers @ {ICLR} 2023,
+                  Kigali, Rwanda, May 5, 2023},
+  year         = {2023},
+  url          = {https://openreview.net/pdf?id=p7sHcNt\_tqo},
+  biburl       = {https://dblp.org/rec/conf/iclr/CoelhoCF23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
+```
+@article{Y_coelho2024extendedTiny2023Preprint,
+  title={A Two-Stage Training Method for Modeling Constrained Systems With Neural Networks},
+  author={C. Coelho and M. Fernanda P. Costa and L.L. Ferr{\'a}s},
+  journal={arXiv preprint arXiv:2403.02730},
+  year={2024},
+  url={https://arxiv.org/pdf/2403.02730}
+}
+```
+- For the Self-adaptive Penalty Method: 
+```
+@article{selfPreprint,
+  author       = {C. Coelho and
+                  M. Fernanda P. Costa and
+                  L.L. Ferr{\'{a}}s},
+  title        = {A Self-Adaptive Penalty Method for Integrating Prior Knowledge Constraints
+                  into Neural ODEs},
+  journal      = {CoRR},
+  volume       = {abs/2307.14940},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2307.14940},
+  doi          = {10.48550/arXiv.2307.14940},
+  eprinttype    = {arXiv},
+  eprint       = {2307.14940},
+  timestamp    = {Wed, 02 Aug 2023 15:37:53 +0200},
+    doi = {10.48550/arXiv.2307.14940},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2307-14940.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+url={https://arxiv.org/pdf/2307.14940}
+}
+```
+- For the Filter Method: 
+```
+@article{
+ecmlFilter,
+title={A Filter-based Neural ODE Approach for Modelling Natural Systems with Prior Knowledge Constraints},
+journal={Accepted to Knowledge-Guided Machine Learning Workshop at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases ECML PKDD},
+author={C. Coelho and M. Fernanda P. Costa and L. L. Ferr{\'a}s},
+year={2023}
+}
+```
+
 
 ## Usage Instructions
 
