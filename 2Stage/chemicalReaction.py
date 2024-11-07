@@ -136,19 +136,20 @@ if __name__ == '__main__':
     mse_p = torch.Tensor([1])
     pen_p = torch.Tensor([0])
 
-    pen = 1
 
+    pred_y = odeint(func, true_y0, t, method='rk4').to(device)
+    pen = torch.mean(torch.abs(torch.subtract(torch.sum(pred_y, dim=1), tot_m)))
     print("starting penalty phase training...")
     while pen >= 1e-2 or (ii <= 20 and pen <= 1e-2):
         ii += 1
-        optimizer.zero_grad()
+        pen.backward()
+        optimizer.step()
         pred_y = odeint(func, true_y0, t, method='rk4').to(device)
         pen = torch.mean(torch.abs(torch.subtract(torch.sum(pred_y, dim=1), tot_m)))
         if ii % args.test_freq == 0:
             print('Iter {:04d} | Penalty {:.6f}'.format(ii, pen.item()))
+        optimizer.zero_grad()
 
-        pen.backward()
-        optimizer.step()
 
     best_f = 10000000
     best_params = list(func.parameters())

@@ -84,19 +84,20 @@ if __name__ == '__main__':
     optimizer = optim.Adam(func.parameters(), lr=1e-5)
     end = time.time()
 
-    pen = 1
+    pred_y = odeint(func, true_y0, t, method='rk4').to(device)
+    pen = torch.mean((torch.maximum(torch.subtract(pred_y, 12), torch.Tensor([0]).to(device))))
 
     print("starting penalty phase training...")
     while pen >= 1e-4 or (ii <= 20 and pen <= 1e-4):
         ii += 1
-        optimizer.zero_grad()
+        pen.backward()
+        optimizer.step()
         pred_y = odeint(func, true_y0, t, method='rk4').to(device)
         pen = torch.mean((torch.maximum(torch.subtract(pred_y, 12), torch.Tensor([0]).to(device))))
         if ii % args.test_freq == 0:
             print('Iter {:04d} | Penalty {:.6f}'.format(ii, pen.item()))
+        optimizer.zero_grad()
 
-        pen.backward()
-        optimizer.step()
     
 
     best_f = 10000000
