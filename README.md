@@ -1,9 +1,9 @@
 # Integrating Prior Knowledge Into Neural Networks Explicitly
 
 This repository is home to three different methods:
-1. **The Two-stage Method:** ["Prior knowledge meets Neural ODEs: a two-stage training method for improved explainability"; C. Coelho, M. Fernanda P. Costa, L.L. Ferrás; The First Tiny Papers Track at ICLR 2023](https://openreview.net/forum?id=p7sHcNt_tqo&referrer=%5Bthe%20profile%20of%20C.%20Coelho%5D(%2Fprofile%3Fid%3D~C._Coelho2)) and ["A Two-Stage Training Method for Modeling Constrained Systems with Neural Networks", C. Coelho, M. Fernanda P. Costa and L.L. Ferrás; preprint](https://arxiv.org/abs/2403.02730)
+1. **The Two-stage Method:** ["Prior knowledge meets Neural ODEs: a two-stage training method for improved explainability"; C. Coelho, M. Fernanda P. Costa, L.L. Ferrás; The First Tiny Papers Track at ICLR 2023](https://openreview.net/forum?id=p7sHcNt_tqo&referrer=%5Bthe%20profile%20of%20C.%20Coelho%5D(%2Fprofile%3Fid%3D~C._Coelho2)) and ["A Two-Stage Training Method for Modeling Constrained Systems with Neural Networks", C. Coelho, M. Fernanda P. Costa and L.L. Ferrás; Journal of Forecasting]([https://arxiv.org/abs/2403.02730](https://onlinelibrary.wiley.com/doi/full/10.1002/for.3270))
 2. **The Self-adaptive Penalty Method:** ["A Self-Adaptive Penalty Method for Integrating Prior Knowledge Constraints into Neural ODEs"; C. Coelho, M. Fernanda P. Costa, and L.L. Ferrás; preprint](https://arxiv.org/abs/2307.14940) 
-3. **The Filter Method:** ["A Filter-based Neural ODE Approach for Modelling Natural Systems with Prior Knowledge Constraints"; C. Coelho, M. Fernanda P. Costa, and L.L. Ferrás; Accepted to Knowledge-Guided Machine Learning Workshop at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases ECML PKDD 2023]()
+3. **The Filter Method:** ["A Filter-based Neural ODE Approach for Modelling Natural Systems with Prior Knowledge Constraints"; C. Coelho, M. Fernanda P. Costa, and L.L. Ferrás; Accepted to Knowledge-Guided Machine Learning Workshop at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases ECML PKDD 2023](https://link.springer.com/chapter/10.1007/978-3-031-74633-8_24)
 
 ### **If you use this code, please cite the respective papers:**
 - For the Two-stage Method: 
@@ -27,12 +27,12 @@ This repository is home to three different methods:
 ```
 
 ```
-@article{Y_coelho2024extendedTiny2023Preprint,
+@article{coelho2025two,
   title={A Two-Stage Training Method for Modeling Constrained Systems With Neural Networks},
-  author={C. Coelho and M. Fernanda P. Costa and L.L. Ferr{\'a}s},
-  journal={arXiv preprint arXiv:2403.02730},
-  year={2024},
-  url={https://arxiv.org/pdf/2403.02730}
+  author={Coelho, C and Costa, M Fernanda P and Ferr{\'a}s, Luis L},
+  journal={Journal of Forecasting},
+  year={2025},
+  publisher={Wiley Online Library}
 }
 ```
 - For the Self-adaptive Penalty Method: 
@@ -59,12 +59,13 @@ url={https://arxiv.org/pdf/2307.14940}
 ```
 - For the Filter Method: 
 ```
-@article{
-ecmlFilter,
-title={A Filter-based Neural ODE Approach for Modelling Natural Systems with Prior Knowledge Constraints},
-journal={Accepted to Knowledge-Guided Machine Learning Workshop at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases ECML PKDD},
-author={C. Coelho and M. Fernanda P. Costa and L. L. Ferr{\'a}s},
-year={2023}
+@inproceedings{coelho2023filter,
+  title={A Filter-Based Neural ODE Approach for Modelling Natural Systems with Prior Knowledge Constraints},
+  author={Coelho, C and P. Costa, M Fernanda and Ferr{\'a}s, LL},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={349--360},
+  year={2023},
+  organization={Springer}
 }
 ```
 
