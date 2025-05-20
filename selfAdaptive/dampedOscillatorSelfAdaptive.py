@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
         #inequality constraint
         v_j = torch.abs(torch.relu(-E[0] + E).to(device))
-        mu_j = torch.div(torch.sum(v_j != 0), len(v_j))
+        mu_j = torch.div(torch.sum(v_j), len(v_j))
         P_theta = torch.sum(v_j)
 
         counter = sum(list(map(lambda x: x==0, -E[0]+E[1:]))).item() #to count how many constraints violations were =0
