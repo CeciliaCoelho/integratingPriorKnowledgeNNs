@@ -102,7 +102,7 @@ if __name__ == '__main__':
         counter = sum(list(map(lambda x: x==0, torch.subtract(pred_y, 12)))).item() #to count how many constraints violations were =0
 
         if itr % 100 == 0 or itr == 1:
-            mu_j = torch.div(torch.sum(v_j != 0), len(v_j))
+            mu_j = torch.div(torch.sum(v_j), len(v_j))
         P_theta = torch.mean(v_j)
 
         if itr == 1:
